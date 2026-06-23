@@ -3,10 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Vambrace makes hand-forged leather armor for the wrist, built around the modern timepiece.">
+    <title>Vambrace | Leather Armor for the Wrist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World! This is my cloud website.</h1>
+    <header class="site-header" aria-label="Primary navigation">
+        <a class="brand-mark" href="#" aria-label="Vambrace home">
+            <span class="brand-sigil">V</span>
+            <span>Vambrace</span>
+        </a>
+        <nav class="nav-links" aria-label="Main menu">
+            <a href="#products">Pieces</a>
+            <a href="#craft">Craft</a>
+            <a href="#manifesto">Manifesto</a>
+        </nav>
+        <a class="nav-action" href="#claim">Claim yours</a>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <img class="hero-image" src="assets/vambrace-hero.png" alt="Two leather wrist armor watch pieces resting on a dark forge table.">
+            <div class="hero-scrim"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Full-grain hide. Hand-forged form.</p>
+                <h1 id="hero-title">Armor for the hour you enter.</h1>
+                <p class="hero-copy">Vambrace builds leather armor for the wrist. Cut for the modern timepiece. Drawn from a tradition older than fashion.</p>
+                <div class="hero-actions" aria-label="Hero actions">
+                    <a class="button button-primary" href="#products">View the two</a>
+                    <a class="button button-ghost" href="#craft">Read the mark</a>
+                </div>
+            </div>
+            <aside class="hero-proof" aria-label="Craft facts">
+                <span>Two pieces</span>
+                <span>Hand stitched</span>
+                <span>Made slowly</span>
+            </aside>
+        </section>
+
+        <section class="intro-band" aria-label="Brand statement">
+            <p>Where other accessories decorate, we fortify.</p>
+        </section>
+
+        <section id="products" class="section products" aria-labelledby="products-title">
+            <div class="section-heading">
+                <p class="eyebrow">The only two</p>
+                <h2 id="products-title">Choose your hide.</h2>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-visual product-visual-night" aria-hidden="true">
+                        <span class="watch-core"></span>
+                        <span class="stitch stitch-left"></span>
+                        <span class="stitch stitch-right"></span>
+                    </div>
+                    <div class="product-copy">
+                        <p class="product-kicker">01 / Black hide. Dark steel.</p>
+                        <h3>Night Forge</h3>
+                        <p>Black full-grain leather. Charcoal thread. Dark steel fittings. Built for the watch that speaks last.</p>
+                        <dl class="product-specs">
+                            <div><dt>Leather</dt><dd>Black full-grain</dd></div>
+                            <div><dt>Hardware</dt><dd>Dark steel</dd></div>
+                            <div><dt>Finish</dt><dd>Burnished edge</dd></div>
+                        </dl>
+                        <a class="text-link" href="#claim">Claim Night Forge</a>
+                    </div>
+                </article>
+
+                <article class="product-card product-card-featured">
+                    <div class="product-visual product-visual-ember" aria-hidden="true">
+                        <span class="watch-core"></span>
+                        <span class="stitch stitch-left"></span>
+                        <span class="stitch stitch-right"></span>
+                    </div>
+                    <div class="product-copy">
+                        <p class="product-kicker">02 / Oxblood hide. Aged brass.</p>
+                        <h3>Ember Oath</h3>
+                        <p>Deep oxblood leather. Waxed thread. Brass fittings darkened by hand. Made to gather marks, not hide them.</p>
+                        <dl class="product-specs">
+                            <div><dt>Leather</dt><dd>Oxblood full-grain</dd></div>
+                            <div><dt>Hardware</dt><dd>Aged brass</dd></div>
+                            <div><dt>Finish</dt><dd>Hand-oiled</dd></div>
+                        </dl>
+                        <a class="text-link" href="#claim">Claim Ember Oath</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="craft" class="section craft" aria-labelledby="craft-title">
+            <div class="section-heading">
+                <p class="eyebrow">The making</p>
+                <h2 id="craft-title">No part is casual.</h2>
+            </div>
+            <div class="craft-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Hide</h3>
+                    <p>Full-grain leather keeps the scars. The surface is not corrected. It earns its record.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Hand</h3>
+                    <p>Every seam is punched, set, and stitched by hand. The line holds because the maker held it first.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Hour</h3>
+                    <p>The form carries a modern timepiece without surrendering to it. Device after device, the armor remains.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="manifesto" class="manifesto" aria-labelledby="manifesto-title">
+            <div>
+                <p class="eyebrow">Manifesto</p>
+                <h2 id="manifesto-title">We do not follow taste. We dictate it.</h2>
+            </div>
+            <div class="manifesto-copy">
+                <p>The wrist is the first thing a man offers the world. A handshake. A watch face. A signal of who he intends to be that day.</p>
+                <p>Most leave that signal to chance. We refuse that.</p>
+                <p>It is not a band. It is armor. It will outlast trends, software updates, and the next three devices you fasten it around.</p>
+            </div>
+        </section>
+
+        <section id="claim" class="claim" aria-labelledby="claim-title">
+            <p class="eyebrow">Few made. Slowly.</p>
+            <h2 id="claim-title">Choose something deliberate.</h2>
+            <p>Two forms. One wrist. No ornament without purpose.</p>
+            <a class="button button-primary" href="mailto:orders@vambrace.example?subject=Vambrace%20claim">Request the next making</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Vambrace</span>
+        <span>Leather armor for the wrist.</span>
+    </footer>
 </body>
 </html>
